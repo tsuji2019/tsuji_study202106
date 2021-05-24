@@ -1,4 +1,4 @@
-# tsujui_study2021
+# tsuji_study2021
 
 ## Build Setup
 
