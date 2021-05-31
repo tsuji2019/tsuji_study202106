@@ -20,7 +20,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    // プロジェクト内の SCSS ファイル
+    'reset-css',
     '@/assets/scss/common.scss'
   ],
 
@@ -32,14 +32,16 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
+  buildModules: ['@nuxtjs/svg', '@nuxtjs/color-mode'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['nuxt-webfontloader'],
+  modules: ['nuxt-webfontloader','@nuxtjs/style-resources'],
   webfontloader: {
     google: {
-      families: ['Libre+Baskerville:ital'],
+      families: ['Libre+Baskerville:ital']
+    },
+    styleResources: {
+      scss: ['~ /assets/scss/_variables.scss']
     },
   },
 

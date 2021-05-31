@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <LogoSvg />
       <h1 class="title">
-        tsujui_study2021
+        あああ
       </h1>
       <div class="links">
         <a
@@ -28,7 +28,13 @@
 </template>
 
 <script>
-export default {}
+import LogoSvg from '@/assets/svg/Logo.svg';
+
+export default {
+  components: {
+    LogoSvg,
+  },
+}
 </script>
 
 <style lang="scss" scoped>
