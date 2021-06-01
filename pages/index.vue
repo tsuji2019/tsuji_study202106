@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <div>
-      <LogoSvg />
       <h1 class="title">
         あああ
       </h1>
@@ -28,12 +27,8 @@
 </template>
 
 <script>
-import LogoSvg from '@/assets/svg/Logo.svg';
 
 export default {
-  components: {
-    LogoSvg,
-  },
 }
 </script>
 
