@@ -1,18 +1,20 @@
 <template>
 	<header class="header">
 		<div class="header-inner">
-			<h1 class="logo"><LogoSvg /></h1>
-            <div class="nav">
-                <ul class="nav__inner">
-                    <li class="nav__inner__name">About</li>
-                    <li class="nav__inner__name">Works</li>
-                    <li class="nav__inner__name">Findings</li>
-                    <li class="nav__inner__name">Events</li>
-                    <li class="nav__inner__name">People</li>
-                    <li class="nav__inner__name">Contact</li>
-                </ul>
+			<h1 class="logo"><a href=""><LogoSvg /></a></h1>
+            <nav id="g-nav">
+                <div id="g-nav-list">
+                    <ul id="g-navi" class="nav">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Findings</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
                 <div class=""></div>
-            </div>
+            </nav>
 		</div>
 	</header>
 </template>
@@ -31,35 +33,55 @@ export default {
 @import '~assets/scss/variables';
 
 header{
+    width: 100%;
+    position: fixed;
     font-family: $font-header;
     font-weight: bold;
-    width: 100%;
     .header-inner{
-        display: table;
-        table-layout: fixed;
         width: 100%;
+        height: 70px;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 20px 100px 20px 0;
         .logo{
-            display: table-cell;
-            vertical-align: middle;
+            text-transform: uppercase;
+            padding: 0 0 0 2%;
+            line-height: 1;
+            white-space: nowrap;
         }
-        .nav{
-            text-align: right;
-            &__inner{
-            display: table;
-            table-layout: fixed;
-            width: 600px;
-            height: 150px;
-                // display: flex;
-                &__name{
-                    display: table-cell;
-                    vertical-align: middle;
+        #g-nav{
+            &-list{
+                .nav{
+                    display: flex;
+                    justify-content: center;
+                    color: #000000;
+                    li{
                     // color: $color-white;
                     color: #000000;
-                    font-size: 2.1rem;
-                    text-align: center;
+                    font-size: 1.6rem;
+                    // text-align: center;
+                        > a {
+                            color: #eee;
+                            padding: 20px 35px;
+                            transition: all .3s;
+                        }
+                    }
                 }
             }
         }
     }
+}
+.header{
+    height: 70px;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 100px 20px 0;
 }
 </style>

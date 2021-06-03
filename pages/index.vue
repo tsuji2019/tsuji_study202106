@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">
-        あああ
-      </h1>
+      <div class="kv">
+        <img src="~/assets/images/kv.jpg">
+      </div>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -41,14 +41,10 @@ export default {
   align-items: center;
   text-align: center;
 }
-
-.title {
-  font-family: 'Libre Baskerville', serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.kv {
+  img{
+    width: 100%;
+  }
 }
 
 .subtitle {
