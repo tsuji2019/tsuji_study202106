@@ -61,11 +61,12 @@ header{
                     li{
                     // color: $color-white;
                     color: #000000;
-                    font-size: 1.6rem;
+                    font-size: 1.5rem;
                     // text-align: center;
                         > a {
                             color: #eee;
-                            padding: 20px 35px;
+                            padding: 50px 25px;
+                            letter-spacing: 0.1rem;
                             transition: all .3s;
                         }
                     }
