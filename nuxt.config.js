@@ -38,7 +38,7 @@ export default {
   modules: ['nuxt-webfontloader','@nuxtjs/style-resources'],
   webfontloader: {
     google: {
-      families: ['Libre+Baskerville:ital']
+      families: ['Noto+Sans+JP:wght@100;300;400;500;700;900','Libre+Baskerville:ital']
     },
     styleResources: {
       scss: ['~ /assets/scss/_variables.scss']

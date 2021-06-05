@@ -4,7 +4,7 @@
       <div class="kv">
         <img src="~/assets/images/kv.jpg" />
       </div>
-      <div id="contents01">
+      <div id="contents">
         <div>
           <div class="title">
             <h2>
@@ -17,11 +17,53 @@
           </div>
           <div class="whatwedo">
               <ul class="whatwedo__list">
-                <li>
+                <li class="whatwedo__list__item">
                   <img src="~/assets/images/kv.jpg" />
-                  <div class="title"></div>
-                  <p class="text"></p>
-                  <span class="tag"></span>
+                  <div class="whatwedo__list__item__ditail">
+                  <div class="tags">
+                  <p class="tag"><span class="tag-bk">東大オリジナル株式会社</span></p>
+                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
+                  </div>
+                  <p class="item-title">｢技術系｣＋｢人文系｣の可能性に切り込む 京大 産学連携情報プラットフォーム｢Philo-｣(フィロ)構築</p>
+                  <span class="hashtag"><a href="#">#産官学連携</a></span>
+                  <span class="hashtag"><a href="#">#大学</a></span>
+                  </div>
+                </li>
+                <li class="whatwedo__list__item">
+                  <img src="~/assets/images/kv.jpg" />
+                  <div class="whatwedo__list__item__ditail">
+                  <div class="tags">
+                  <p class="tag"><span class="tag-bk">東大オリジナル株式会社</span></p>
+                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
+                  </div>
+                  <p class="item-title">｢技術系｣＋｢人文系｣の可能性に切り込む 京大 産学連携情報プラットフォーム｢Philo-｣(フィロ)構築</p>
+                  <span class="hashtag"><a href="#">#産官学連携</a></span>
+                  <span class="hashtag"><a href="#">#大学</a></span>
+                  </div>
+                </li>
+                <li class="whatwedo__list__item">
+                  <img src="~/assets/images/kv.jpg" />
+                  <div class="whatwedo__list__item__ditail">
+                  <div class="tags">
+                  <p class="tag"><span class="tag-bk">東大オリジナル株式会社</span></p>
+                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
+                  </div>
+                  <p class="item-title">｢技術系｣＋｢人文系｣の可能性に切り込む 京大 産学連携情報プラットフォーム｢Philo-｣(フィロ)構築</p>
+                  <span class="hashtag"><a href="#">#産官学連携</a></span>
+                  <span class="hashtag"><a href="#">#大学</a></span>
+                  </div>
+                </li>
+                <li class="whatwedo__list__item">
+                  <img src="~/assets/images/kv.jpg" />
+                  <div class="whatwedo__list__item__ditail">
+                  <div class="tags">
+                  <p class="tag"><span class="tag-bk">東大オリジナル株式会社</span></p>
+                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
+                  </div>
+                  <p class="item-title">｢技術系｣＋｢人文系｣の可能性に切り込む 京大 産学連携情報プラットフォーム｢Philo-｣(フィロ)構築</p>
+                  <span class="hashtag"><a href="#">#産官学連携</a></span>
+                  <span class="hashtag"><a href="#">#大学</a></span>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -41,7 +83,7 @@ export default {};
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 1280px;
+  // max-width: 1280px;
   overflow: hidden;
   // min-height: 100vh;
   // display: flex;
@@ -55,7 +97,7 @@ export default {};
   }
 }
 
-#contents01 {
+#contents {
   margin: auto;
   margin-bottom: 500px;
   padding: 0 10rem;
@@ -77,7 +119,7 @@ export default {};
     }
     .h2-small {
       font-family: $font-h2-small;
-      color: #c0a700;
+      color: $color-ylw-100;
       font-weight: 400;
       font-size: 1.2rem;
       display: block;
@@ -85,6 +127,7 @@ export default {};
     }
     .copy {
       font-size: 1.4rem;
+      font-weight: 200;
       display: table-cell;
       vertical-align: middle;
       border-left: 1px solid #e5e5e5;
@@ -99,6 +142,25 @@ export default {};
       display: flex;
       justify-content: space-between;
       flex-flow: row wrap;
+      &__item{
+        width : -webkit-calc(336 / 1080 * 100%) ;
+        width : calc(336 / 1080 * 100%) ;
+        font-family: $font-text;
+        font-weight: 100;
+        &__ditail{
+          margin-top: 28px;
+        .tags{
+          margin-bottom: 16px;
+        }
+        .item-title{
+          font-size: 1.9rem;
+          font-weight: 900;
+          line-height: 1.6;
+          color: $color-black;
+          margin-bottom: 22px;
+        }
+        }
+      }
     }
   }
 }

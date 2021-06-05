@@ -27,3 +27,48 @@ a {
   img{
     width: 100%;
   }
+  .tag{
+    margin-right: 5px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 1.2rem;
+  }
+  .tag-bk{
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    padding: 3px 8px;
+    color: #fff;
+    vertical-align: top;
+    border: 1px solid #10121c;
+    background: #10121c;
+    font-weight: 500;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+  }
+  .tag-gold{
+    font-family: 'Helvetica Neue', sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 4px 8px;
+    vertical-align: top;
+    font-weight: 500;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    background-color: #c0a700;
+    border-color: #c0a700;
+    background: 0 0;
+    color: #c0a700;
+    border: 1px solid #c0a700;
+  }
+  .hashtag{
+    color: #c0a700;
+    font-size: 1.0rem;
+    font-style: italic;
+    padding-right: 0.5rem;
+    display: inline-block;
+    font-weight: 100;
+  }
