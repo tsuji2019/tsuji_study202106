@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <div>
       <div class="kv">
         <img src="~/assets/images/kv.jpg" />
       </div>
+      <!-- section 01 -->
       <div id="contents">
         <div class="title">
           <h2>
@@ -13,6 +13,128 @@
           <p class="copy">
             ロフトワークは今、何と向き合っているのか。現在進行形の旅と、少しだけ先の未来
           </p>
+        </div>
+        <div class="whatwedo">
+          <ul class="whatwedo__list">
+            <li class="whatwedo__list__item">
+              <img src="~/assets/images/kv.jpg" />
+              <div class="whatwedo__list__item__ditail">
+                <div class="tags">
+                  <p class="tag">
+                    <span class="tag-bk">東大オリジナル株式会社</span>
+                  </p>
+                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
+                </div>
+                <p class="item-title">
+                  ｢技術系｣＋｢人文系｣の可能性に切り込む 京大
+                  産学連携情報プラットフォーム｢Philo-｣(フィロ)構築
+                </p>
+                <span class="hashtag"><a href="#">#産官学連携</a></span>
+                <span class="hashtag"><a href="#">#大学</a></span>
+              </div>
+            </li>
+            <li class="whatwedo__list__item">
+              <img src="~/assets/images/kv.jpg" />
+              <div class="whatwedo__list__item__ditail">
+                <div class="tags">
+                  <p class="tag">
+                    <span class="tag-bk">東日本旅客鉄道株式会社</span>
+                  </p>
+                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
+                </div>
+                <p class="item-title">
+                  モビリティ変革に、ユーザー視点を取り入れる。デザイン思考実践の場づくり
+                  NewHere Project
+                </p>
+                <span class="hashtag"
+                  ><a href="#">#クリエイターとの共創</a></span
+                >
+                <span class="hashtag"><a href="#">#サービスデザイン</a></span>
+                <span class="hashtag"><a href="#">#デザイン思考</a></span>
+              </div>
+            </li>
+            <li class="whatwedo__list__item">
+              <img src="~/assets/images/kv.jpg" />
+              <div class="whatwedo__list__item__ditail">
+                <div class="tags">
+                  <p class="tag"><span class="tag-bk">八尾市</span></p>
+                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
+                </div>
+                <p class="item-title">
+                  はじめてのBtoCプロダクトづくり
+                  八尾市の技術力を世界へ届けるYAOYA PROJECT2020
+                </p>
+                <span class="hashtag"
+                  ><a href="#">#クリエイターとの共創</a></span
+                >
+                <span class="hashtag"><a href="#">#地方とデザイン</a></span>
+                <span class="hashtag"><a href="#">#デザイン思考</a></span>
+              </div>
+            </li>
+            <li class="whatwedo__list__item">
+              <img src="~/assets/images/kv.jpg" />
+              <div class="whatwedo__list__item__ditail">
+                <div class="tags">
+                  <p class="tag"><span class="tag-bk">NTTレゾナント</span></p>
+                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
+                </div>
+                <p class="item-title">
+                  新規事業アイデアのスケールを拡げる NTTレゾナント｢goo
+                  “未来ヒント”｣
+                </p>
+                <span class="hashtag"><a href="#">#事業開発</a></span>
+                <span class="hashtag"><a href="#">#デザイン思考</a></span>
+              </div>
+            </li>
+            <li class="whatwedo__list__item">
+              <img src="~/assets/images/kv.jpg" />
+              <div class="whatwedo__list__item__ditail">
+                <div class="tags">
+                  <p class="tag"><span class="tag-bk">立命館大学</span></p>
+                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
+                </div>
+                <p class="item-title">
+                  非接触時代の研修プログラムをデザイン
+                  オンライン研修開発ガイド｢PATHWAYS｣を制作・無償公開
+                </p>
+                <span class="hashtag"><a href="#">#事業開発</a></span>
+                <span class="hashtag"><a href="#">#大学</a></span>
+              </div>
+            </li>
+            <li class="whatwedo__list__item">
+              <img src="~/assets/images/kv.jpg" />
+              <div class="whatwedo__list__item__ditail">
+                <div class="tags">
+                  <p class="tag">
+                    <span class="tag-bk">株式会社ブリヂストン</span>
+                  </p>
+                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
+                </div>
+                <p class="item-title">
+                  “人の動きを支える”ブリヂストンへ
+                  ソフトロボティクス事業にかける想い
+                </p>
+                <span class="hashtag"><a href="#">#対談・鼎談</a></span>
+                <span class="hashtag"><a href="#">#事業開発</a></span>
+                <span class="hashtag"><a href="#">#MTRL</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="btn btn__plus">
+        <a href="#"><span class="btn-text">その他プロジェクトを見る</span></a>
+      </div>
+
+      <!-- section 02 -->
+      <div id="contents">
+        <div class="title">
+          <h2>
+            <span class="h2-small">Pickup Contents</span>
+            Events/News/Columns
+          </h2>
+          <!-- <p class="copy">
+            ロフトワークは今、何と向き合っているのか。現在進行形の旅と、少しだけ先の未来
+          </p> -->
         </div>
         <div class="whatwedo">
           <ul class="whatwedo__list">
@@ -231,43 +353,6 @@ export default {};
         }
       }
     }
-  }
-  .btn{
-    width: 100%;
-    text-align: center;
-    display: block;
-    font-size: 1.2rem;
-    padding: 6rem 0;
-    background: #f5f5f5;
-    position: relative;
-    >a{
-      .btn-text{
-        position: relative;
-        padding-top: 2.6rem;
-        display: inline-block;
-      }
-    }
-    &:hover{
-    }
-  }
-  .btn__plus .btn-text::before,
-  .btn__plus .btn-text::after {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 1px;
-    border-top: 1px solid #1a1a1a;
-    transform: translateX(-50%);
-  }
-  .btn__plus .btn-text::after {
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    transform: rotate(90deg);
   }
 }
 
