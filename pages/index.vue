@@ -127,118 +127,29 @@
 
       <!-- section 02 -->
       <div id="contents">
-        <div class="title">
-          <h2>
-            <span class="h2-small">Pickup Contents</span>
-            Events/News/Columns
+        <div class="title title__center">
+          <h2 class="h2-center">
+            <span class="h2-small ">Pickup Contents</span>
+            Events<span class="slashーsmall">/</span>News<span class="slashーsmall">/</span>Columns
           </h2>
           <!-- <p class="copy">
             ロフトワークは今、何と向き合っているのか。現在進行形の旅と、少しだけ先の未来
           </p> -->
         </div>
-        <div class="whatwedo">
-          <ul class="whatwedo__list">
-            <li class="whatwedo__list__item">
+        <div class="pickup">
+          <ul class="pickup__list">
+            <li class="pickup__list__item">
               <img src="~/assets/images/kv.jpg" />
-              <div class="whatwedo__list__item__ditail">
+              <div class="pickup__list__item__ditail">
                 <div class="tags">
+                  <p class="tag"><span class="tag-gold">EVENT</span></p>
                   <p class="tag">
-                    <span class="tag-bk">東大オリジナル株式会社</span>
+                    <span class="">オンライン</span>
                   </p>
-                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
                 </div>
-                <p class="item-title">
-                  ｢技術系｣＋｢人文系｣の可能性に切り込む 京大
-                  産学連携情報プラットフォーム｢Philo-｣(フィロ)構築
-                </p>
-                <span class="hashtag"><a href="#">#産官学連携</a></span>
+                <p class="item-title">「手に取る機会を取り戻す」コミュニケーションツールのデザイン ー 事例：東レ ウルトラスエード  x 1518</p>
+                <span class="number">2021.0602</span>
                 <span class="hashtag"><a href="#">#大学</a></span>
-              </div>
-            </li>
-            <li class="whatwedo__list__item">
-              <img src="~/assets/images/kv.jpg" />
-              <div class="whatwedo__list__item__ditail">
-                <div class="tags">
-                  <p class="tag">
-                    <span class="tag-bk">東日本旅客鉄道株式会社</span>
-                  </p>
-                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
-                </div>
-                <p class="item-title">
-                  モビリティ変革に、ユーザー視点を取り入れる。デザイン思考実践の場づくり
-                  NewHere Project
-                </p>
-                <span class="hashtag"
-                  ><a href="#">#クリエイターとの共創</a></span
-                >
-                <span class="hashtag"><a href="#">#サービスデザイン</a></span>
-                <span class="hashtag"><a href="#">#デザイン思考</a></span>
-              </div>
-            </li>
-            <li class="whatwedo__list__item">
-              <img src="~/assets/images/kv.jpg" />
-              <div class="whatwedo__list__item__ditail">
-                <div class="tags">
-                  <p class="tag"><span class="tag-bk">八尾市</span></p>
-                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
-                </div>
-                <p class="item-title">
-                  はじめてのBtoCプロダクトづくり
-                  八尾市の技術力を世界へ届けるYAOYA PROJECT2020
-                </p>
-                <span class="hashtag"
-                  ><a href="#">#クリエイターとの共創</a></span
-                >
-                <span class="hashtag"><a href="#">#地方とデザイン</a></span>
-                <span class="hashtag"><a href="#">#デザイン思考</a></span>
-              </div>
-            </li>
-            <li class="whatwedo__list__item">
-              <img src="~/assets/images/kv.jpg" />
-              <div class="whatwedo__list__item__ditail">
-                <div class="tags">
-                  <p class="tag"><span class="tag-bk">NTTレゾナント</span></p>
-                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
-                </div>
-                <p class="item-title">
-                  新規事業アイデアのスケールを拡げる NTTレゾナント｢goo
-                  “未来ヒント”｣
-                </p>
-                <span class="hashtag"><a href="#">#事業開発</a></span>
-                <span class="hashtag"><a href="#">#デザイン思考</a></span>
-              </div>
-            </li>
-            <li class="whatwedo__list__item">
-              <img src="~/assets/images/kv.jpg" />
-              <div class="whatwedo__list__item__ditail">
-                <div class="tags">
-                  <p class="tag"><span class="tag-bk">立命館大学</span></p>
-                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
-                </div>
-                <p class="item-title">
-                  非接触時代の研修プログラムをデザイン
-                  オンライン研修開発ガイド｢PATHWAYS｣を制作・無償公開
-                </p>
-                <span class="hashtag"><a href="#">#事業開発</a></span>
-                <span class="hashtag"><a href="#">#大学</a></span>
-              </div>
-            </li>
-            <li class="whatwedo__list__item">
-              <img src="~/assets/images/kv.jpg" />
-              <div class="whatwedo__list__item__ditail">
-                <div class="tags">
-                  <p class="tag">
-                    <span class="tag-bk">株式会社ブリヂストン</span>
-                  </p>
-                  <p class="tag"><span class="tag-gold">PROJECT</span></p>
-                </div>
-                <p class="item-title">
-                  “人の動きを支える”ブリヂストンへ
-                  ソフトロボティクス事業にかける想い
-                </p>
-                <span class="hashtag"><a href="#">#対談・鼎談</a></span>
-                <span class="hashtag"><a href="#">#事業開発</a></span>
-                <span class="hashtag"><a href="#">#MTRL</a></span>
               </div>
             </li>
           </ul>
@@ -296,7 +207,6 @@ export default {};
       font-size: 2.8em;
       padding-right: 5rem;
       width: 20%;
-    }
     .h2-small {
       font-family: $font-h2-small;
       color: $color-ylw-100;
@@ -304,6 +214,7 @@ export default {};
       font-size: 1.2rem;
       display: block;
       padding-top: 1.8rem;
+    }
     }
     .copy {
       font-size: 1.4rem;
@@ -313,6 +224,25 @@ export default {};
       border-left: 1px solid #e5e5e5;
       width: 80%;
       padding-left: 5rem;
+    }
+  }
+  .title__center{
+    text-align: center;
+    padding: 0;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    .h2-center{
+      text-align: center;
+      padding: 0;
+      >span{
+        padding-bottom: 2rem;
+      }
+      .slashーsmall{
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 1.8rem;
+        padding: 0 1rem;
+      }
     }
   }
   .whatwedo {
@@ -327,6 +257,45 @@ export default {};
       &__item {
         width: -webkit-calc(336 / 1080 * 100%);
         width: calc(336 / 1080 * 100%);
+        font-family: $font-text;
+        font-weight: 100;
+        margin-bottom: 68px;
+        &__ditail {
+          margin-top: 28px;
+          .tags {
+            margin-bottom: 16px;
+          }
+          .item-title {
+            font-size: 1.9rem;
+            font-weight: 900;
+            line-height: 1.6;
+            color: $color-black;
+            margin-bottom: 22px;
+          }
+        }
+        .hashtag {
+          a {
+            &:hover {
+              color: #8d7b00;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pickup {
+    width: 100%;
+    min-width: 1000px;
+    &__list {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      padding: 0 10rem;
+      &__item {
+        width: -webkit-calc(100% / 3);
+        width: calc(100% / 3);
         font-family: $font-text;
         font-weight: 100;
         margin-bottom: 68px;
