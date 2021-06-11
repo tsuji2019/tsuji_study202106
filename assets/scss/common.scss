@@ -33,6 +33,31 @@ a {
   a:hover{
   }
 
+  // font-weigh
+  .fw--200{
+    font-weight: 100;
+  }
+  .fw--300{
+    font-weight: 300;
+  }
+  .fw--400{
+    font-weight: 400;
+  }
+  .fw--500{
+    font-weight: 500;
+  }
+  .fw--700{
+    font-weight: 700;
+  }
+  .fw--900{
+    font-weight: 900;
+  }
+
+  // font-size
+  .fs--12{
+    font-size: 1.2rem;
+  }
+
   .tag{
     margin-right: 5px;
     position: relative;
@@ -54,10 +79,6 @@ a {
     font-weight: 500;
     border-radius: 20px;
     -webkit-border-radius: 20px;
-  }
-  .tag-text{
-    font-size: 1.2rem;
-    font-weight: 400;
   }
   .tag-gold{
     font-family: 'Helvetica Neue', sans-serif;
