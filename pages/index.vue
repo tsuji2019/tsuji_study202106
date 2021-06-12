@@ -270,40 +270,57 @@
           </div>
           <div class="works__list">
             <!-- works left -->
-            <ul class="works__list__left">
-              <li class="works__list__leftt__item">
-                <ul class="left__inner">
-                  <li class="thumb01">
-                    <img src="~/assets/images/kv.jpg" />
-                  </li>
-                  <li class="text01">
-                      <span class="hashtag-number">2021.0602</span>
+            <div class="works__list__inner">
+              <ul class="works__list__left">
+                <li class="works__list__left__item">
+                  <ul class="left-inner">
+                    <li class="thumb01">
+                      <img src="~/assets/images/kv.jpg" />
+                    </li>
+                    <li class="text01">
+                      <span class="hashtag-number">2021.06.02</span>
                       <p class="item-title">
-                        ええ空気を探して vol.1
-                        テクノロジーの研究者と探る場作りのヒント
+                        ええ空気を探して vol.1<br />
+                        テクノロジーの研究者と探る場作りのヒント<br />
                         (現代アーティスト/研究者 川端 渉)
                       </p>
-                      <p class=""><span></span>104</p>
+                      <p class="look-icon"><span></span>104</p>
                       <span class="hashtag"><a href="#">#対談・鼎談</a></span>
                       <span class="hashtag"
-                        ><a href="#">#COUNTER POINT</a></span>
+                        ><a href="#">#COUNTER POINT</a></span
+                      >
                       <span class="hashtag"><a href="#">#空間デザイン</a></span>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="btn-viewmore">
+                <div class="btn-inner">
+                  <a href=""><span>もっと見る</span></a>
+                </div>
+              </div>
+            </div>
             <!-- works right -->
             <div class="works__list__right">
               <p class="works__list__right__title">Popular Post</p>
               <ul class="works__list__right__inner">
-                <li class=""></li>
+                <li>
+                  <ul class="right-inner">
+                    <li class="thumb02">
+                      <img src="~/assets/images/kv.jpg" />
+                    </li>
+                    <li class="text02">
+                      <span class="hashtag-name">鈴木 真理子</span>
+                      <p class="look-icon"><span></span>104</p>
+                      <p class="item-title">
+                        ボトムアップで始まった、ロフトワークの“創造的な組織づくり”<br />
+                        「NANDA会」レポート
+                      </p>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </div>
-          </div>
-        </div>
-        <div class="btn-viewmore">
-          <div class="btn-inner">
-            <a href=""><span>もっと見る</span></a>
           </div>
         </div>
         <div class="btn btn__plus">
@@ -361,7 +378,7 @@ export default {};
       padding-right: 5rem;
       width: 20%;
       .h2-small {
-        font-family: $font-h2-small;
+        font-family: $font-accent;
         color: $color-ylw-100;
         font-weight: 400;
         font-size: 1.2rem;
@@ -374,7 +391,7 @@ export default {};
       font-weight: 200;
       display: table-cell;
       vertical-align: middle;
-      border-left: 1px solid #e5e5e5;
+      border-left: 1px solid $color-lightgray;
       width: 80%;
       padding-left: 5rem;
     }
@@ -472,6 +489,7 @@ export default {};
             &:hover {
               color: #8d7b00;
               text-decoration: underline;
+              font-weight: 500;
             }
           }
         }
@@ -483,35 +501,193 @@ export default {};
       }
     }
   }
+  .btn-viewmore {
+    display: block;
+    padding: 0;
+    max-width: 40rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 6rem 0 12rem;
+    .btn-inner {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 1.42857em 0;
+      border: 1px solid #000;
+      cursor: pointer;
+      color: #1a1a1a;
+    }
+  }
   .works {
     &__slide {
       padding: 0 10rem;
+      margin-bottom: 8rem;
     }
     &__list {
       display: -webkit-flex;
       display: flex;
       -webkit-justify-content: space-between;
       justify-content: space-between;
-       // works left
-      &__left {
+      margin: 0 auto;
+      padding: 0 10rem;
+      // works left
+      &__inner {
         width: 72%;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-justify-content: space-between;
-        justify-content: space-between;
-        &__item{
-          .left__inner{
-            .thumb01{
-              width: 2rem;
+        .works__list__left {
+          width: 100%;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
+          &__item {
+            position: relative;
+            padding: 0 1rem;
+            .left-inner {
+              display: -webkit-flex;
+              display: flex;
+              -webkit-justify-content: space-between;
+              justify-content: space-between;
+              margin: 5rem auto;
+              .thumb01 {
+                width: 35.5%;
+              }
+              .text01 {
+                width: 59%;
+                font-family: $font-text;
+                .hashtag-number {
+                  color: $color-lightgray;
+                  font-weight: 400;
+                  font-size: 1.2rem;
+                  letter-spacing: 0.1rem;
+                }
+                .item-title {
+                  font-size: 2.2rem;
+                  line-height: 1.6;
+                  color: #1a1a1a;
+                  font-weight: 900;
+                  margin: 2rem 0;
+                }
+                .look-icon {
+                  display: inline-block;
+                  vertical-align: middle;
+                  font-size: 1.3rem;
+                  letter-spacing: 0.05em;
+                  font-family: quasimoda, sans-serif;
+                  font-weight: 800;
+                  margin-right: 1rem;
+                }
+              }
             }
-            .text01{
-              width: 54.3rem;
+            &::before,
+            &::after {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 0.1rem;
+            }
+            &::before {
+              background-color: $color-lightgray;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+            &::after {
+              background-color: $color-lightgray;
+              position: absolute;
+              bottom: 0;
+              left: 0;
             }
           }
         }
       }
       &__right {
         width: 23%;
+        height: auto;
+        position: relative;
+        &__title {
+          font-family: $font-accent;
+          padding: 1.8rem 0;
+          text-align: center;
+          background-color: #f7f6f2;
+          color: $color-black;
+          font-size: 1.4rem;
+          font-weight: 100;
+        }
+        &__inner {
+          > li {
+              position: relative;
+            .right-inner {
+              display: -webkit-flex;
+              display: flex;
+              -webkit-justify-content: space-between;
+              justify-content: space-between;
+              padding: 2.6rem 0;
+              .thumb02 {
+                width: 28%;
+              }
+              .text02 {
+                width: 67%;
+                font-family: $font-text;
+                .hashtag-name {
+                  color: $color-lightgray;
+                  font-weight: 400;
+                  font-size: 1rem;
+                  letter-spacing: 0.1rem;
+                  color: $color-lightgray;
+                }
+                .item-title {
+                  font-size: 1.1rem;
+                  line-height: 1.8;
+                  color: #1a1a1a;
+                  font-weight: 900;
+                  margin: 1.3rem 0;
+                }
+                > .look-icon {
+                  display: inline-block;
+                  vertical-align: middle;
+                  float: right;
+                  font-size: 1rem;
+                  letter-spacing: 0.05em;
+                  font-family: quasimoda, sans-serif;
+                  font-weight: 800;
+                  margin-right: 1rem;
+                }
+              }
+            }
+            &::after {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 0.1rem;
+              background-color: $color-lightgray;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+          }
+        }
+        &::before,
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 0.1rem;
+        }
+        &::before {
+          background-color: $color-lightgray;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        &::after {
+          background-color: $color-lightgray;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
       }
     }
   }
@@ -529,26 +705,6 @@ export default {};
   .pickup__list__item::after {
     right: 10rem;
     opacity: 0.4;
-  }
-}
-.btn-viewmore {
-  display: block;
-  padding: 0;
-  max-width: 40rem;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.6;
-  margin: 0 auto;
-  padding: 6rem 0 12rem;
-  .btn-inner {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 1.42857em 0;
-    border: 1px solid #000;
-    cursor: pointer;
-    color: #1a1a1a;
   }
 }
 
