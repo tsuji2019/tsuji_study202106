@@ -324,7 +324,54 @@
           </div>
         </div>
         <div class="btn btn__plus">
-          <a href="#"><span class="btn-text">その他プロジェクトを見る</span></a>
+          <a href="#"><span class="btn-text">How We Work 詳しくはこちら</span></a>
+        </div>
+      </div>
+
+    <!-- section 04 -->
+      <div id="contents">
+        <!-- <div class="title">
+          <h2>
+            How We Work
+            <span class="h2-small">Findings ＆ Methods</span>
+          </h2>
+          <p class="copy">
+            私たちの考えかた、つくりかた。未知を探索する旅の途上で見つけた“創造性の種”
+          </p>
+        </div> -->
+
+        <div class="accsess">
+        <!-- accsess left -->
+          <div class="accsess__slide">
+            <img src="~/assets/images/kv.jpg" />
+          </div>
+          <!-- accsess right -->
+          <div class="accsess__list">
+            <!-- accsess right -->
+            <div class="accsess__list__right">
+              <p class="accsess__list__right__title">Popular Post</p>
+              <ul class="accsess__list__right__inner">
+                <li>
+                  <ul class="right-inner">
+                    <li class="thumb02">
+                      <img src="~/assets/images/kv.jpg" />
+                    </li>
+                    <li class="text02">
+                      <span class="hashtag-name">鈴木 真理子</span>
+                      <p class="look-icon"><span></span>104</p>
+                      <p class="item-title">
+                        ボトムアップで始まった、ロフトワークの“創造的な組織づくり”<br />
+                        「NANDA会」レポート
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="btn btn__plus">
+          <a href="#"><span class="btn-text">How We Work 詳しくはこちら</span></a>
         </div>
       </div>
     </div>
@@ -341,13 +388,7 @@ export default {};
 .container {
   margin: 0 auto;
   width: 100%;
-  // max-width: 1280px;
   overflow: hidden;
-  // min-height: 100vh;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // text-align: center;
 }
 .kv {
   img {
@@ -521,6 +562,7 @@ export default {};
       color: #1a1a1a;
     }
   }
+  // contents works
   .works {
     &__slide {
       padding: 0 10rem;
@@ -537,6 +579,177 @@ export default {};
       &__inner {
         width: 72%;
         .works__list__left {
+          width: 100%;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
+          &__item {
+            position: relative;
+            padding: 0 1rem;
+            .left-inner {
+              display: -webkit-flex;
+              display: flex;
+              -webkit-justify-content: space-between;
+              justify-content: space-between;
+              margin: 5rem auto;
+              .thumb01 {
+                width: 35.5%;
+              }
+              .text01 {
+                width: 59%;
+                font-family: $font-text;
+                .hashtag-number {
+                  color: $color-lightgray;
+                  font-weight: 400;
+                  font-size: 1.2rem;
+                  letter-spacing: 0.1rem;
+                }
+                .item-title {
+                  font-size: 2.2rem;
+                  line-height: 1.6;
+                  color: #1a1a1a;
+                  font-weight: 900;
+                  margin: 2rem 0;
+                }
+                .look-icon {
+                  display: inline-block;
+                  vertical-align: middle;
+                  font-size: 1.3rem;
+                  letter-spacing: 0.05em;
+                  font-family: quasimoda, sans-serif;
+                  font-weight: 800;
+                  margin-right: 1rem;
+                }
+              }
+            }
+            &::before,
+            &::after {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 0.1rem;
+            }
+            &::before {
+              background-color: $color-lightgray;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+            &::after {
+              background-color: $color-lightgray;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+      &__right {
+        width: 23%;
+        height: auto;
+        position: relative;
+        &__title {
+          font-family: $font-accent;
+          padding: 1.8rem 0;
+          text-align: center;
+          background-color: #f7f6f2;
+          color: $color-black;
+          font-size: 1.4rem;
+          font-weight: 100;
+        }
+        &__inner {
+          > li {
+              position: relative;
+            .right-inner {
+              display: -webkit-flex;
+              display: flex;
+              -webkit-justify-content: space-between;
+              justify-content: space-between;
+              padding: 2.6rem 0;
+              .thumb02 {
+                width: 28%;
+              }
+              .text02 {
+                width: 67%;
+                font-family: $font-text;
+                .hashtag-name {
+                  color: $color-lightgray;
+                  font-weight: 400;
+                  font-size: 1rem;
+                  letter-spacing: 0.1rem;
+                  color: $color-lightgray;
+                }
+                .item-title {
+                  font-size: 1.1rem;
+                  line-height: 1.8;
+                  color: #1a1a1a;
+                  font-weight: 900;
+                  margin: 1.3rem 0;
+                }
+                > .look-icon {
+                  display: inline-block;
+                  vertical-align: middle;
+                  float: right;
+                  font-size: 1rem;
+                  letter-spacing: 0.05em;
+                  font-family: quasimoda, sans-serif;
+                  font-weight: 800;
+                  margin-right: 1rem;
+                }
+              }
+            }
+            &::after {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 0.1rem;
+              background-color: $color-lightgray;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+          }
+        }
+        &::before,
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 0.1rem;
+        }
+        &::before {
+          background-color: $color-lightgray;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        &::after {
+          background-color: $color-lightgray;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+// contents accsess
+.accsess {
+    &__slide {
+      padding: 0 10rem;
+      margin-bottom: 8rem;
+    }
+    &__list {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding: 0 10rem;
+      // accsess left
+      &__inner {
+        width: 72%;
+        .accsess__list__left {
           width: 100%;
           display: -webkit-flex;
           display: flex;
