@@ -117,9 +117,11 @@
           </li>
         </ul>
       </div>
-      <div class="btn btn__plus">
+      <div class="btn btn__plus btn-animation">
+        <div class="eff eff01"></div>
         <a href="#"><span class="btn-text">その他プロジェクトを見る</span></a>
       </div>
+    </div>
 
       <!-- section 02 -->
       <div id="contents">
@@ -248,7 +250,8 @@
             <a href=""><span>もっと見る</span></a>
           </div>
         </div>
-        <div class="btn btn__plus">
+        <div class="btn btn__plus btn-animation">
+        <div class="eff eff01"></div>
           <a href="#"><span class="btn-text">その他プロジェクトを見る</span></a>
         </div>
       </div>
@@ -323,7 +326,8 @@
             </div>
           </div>
         </div>
-        <div class="btn btn__plus">
+        <div class="btn btn__plus btn-animation">
+        <div class="eff eff01"></div>
           <a href="#"><span class="btn-text">How We Work 詳しくはこちら</span></a>
         </div>
       </div>
@@ -370,7 +374,8 @@
             </div>
           </div>
         </div>
-        <div class="btn btn__plus">
+        <div class="btn btn__plus btn-animation">
+        <div class="eff eff01"></div>
           <a href="#"><span class="btn-text">How We Work 詳しくはこちら</span></a>
         </div>
       </div>
@@ -932,4 +937,37 @@ export default {};
 .links {
   padding-top: 15px;
 }
+
+// ボタン/hoverアニメーション
+  .btn-animation {
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    a {
+      transition: 1s;
+      z-index: 2;
+      position: relative;
+    }
+    .eff {
+      left: -100%;
+      background: #fff100;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      // padding: 8rem 0;
+    }
+    .eff01 {
+      width: 100%;
+      height: 29.4rem;
+    }
+  }
+  .btn-animation:hover .eff {
+    left: 0;
+    transition: all 0.2s ease;
+    // padding: 8rem 0;
+  }
+  .btn-animation:hover a {
+    color: $color-black;
+  }
 </style>
