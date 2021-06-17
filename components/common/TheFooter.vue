@@ -287,7 +287,6 @@ footer {
   .btn-animation:hover .eff {
     left: 0;
     transition: all 0.2s ease;
-    // padding: 8rem 0;
   }
   .btn-animation:hover a {
     color: $color-black;

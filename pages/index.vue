@@ -123,218 +123,218 @@
       </div>
     </div>
 
-      <!-- section 02 -->
-      <div id="contents">
-        <div class="title title__center">
-          <h2 class="h2-center">
-            <span class="h2-small">Pickup Contents</span>
-            Events<span class="slashーsmall">/</span>News<span
-              class="slashーsmall"
-              >/</span
-            >Columns
-          </h2>
-        </div>
-        <div class="pickup">
-          <ul class="pickup__list">
-            <li class="pickup__list__item">
-              <img src="~/assets/images/kv.jpg" />
-              <div class="pickup__list__item__ditail">
-                <div class="tags">
-                  <p class="tag"><span class="tag-gold">EVENT</span></p>
-                  <p class="tag">
-                    <span class="fs--12 fw--700">オンライン</span>
-                  </p>
-                </div>
-                <p class="item-title">
-                  「手に取る機会を取り戻す」コミュニケーションツールのデザイン
-                  ー 事例：東レ ウルトラスエード x 1518
-                </p>
-                <span class="hashtag-number">2021.0602</span>
-                <span class="hashtag"><a href="#">#大学</a></span>
-              </div>
-            </li>
-            <li class="pickup__list__item">
-              <img src="~/assets/images/kv.jpg" />
-              <div class="pickup__list__item__ditail">
-                <div class="tags">
-                  <p class="tag"><span class="tag-gold">EVENT</span></p>
-                  <p class="tag">
-                    <span class="fs--12 fw--700"
-                      >オンライン（zoom）＋オフライン開催</span
-                    >
-                  </p>
-                </div>
-                <p class="item-title">
-                  [SMBCグループ・ロフトワーク共催]
-                  寄付のデザイン−寄付から生まれるサステナブルな社会とは？
-                </p>
-                <span class="hashtag-number">2021.0602</span>
-              </div>
-            </li>
-            <li class="pickup__list__item">
-              <img src="~/assets/images/kv.jpg" />
-              <div class="pickup__list__item__ditail">
-                <div class="tags">
-                  <p class="tag"><span class="tag-gold">EVENT</span></p>
-                  <p class="tag">
-                    <span class="fs--12 fw--700">オンライン+名古屋</span>
-                  </p>
-                </div>
-                <p class="item-title">
-                  組織変革をデザインするための公開相談会 ー
-                  元マッキンゼー東京支社長、横山禎徳氏に学ぶ
-                </p>
-                <span class="hashtag-number">2021.0601</span>
-                <span class="hashtag"><a href="#">#デザイン経営</a></span>
-                <span class="hashtag"><a href="#">#デザインリサーチ</a></span>
-              </div>
-            </li>
-            <li class="pickup__list__item">
-              <img src="~/assets/images/kv.jpg" />
-              <div class="pickup__list__item__ditail">
-                <div class="tags">
-                  <p class="tag"><span class="tag-gold">EVENT</span></p>
-                  <p class="tag">
-                    <span class="fs--12 fw--700">オンライン</span>
-                  </p>
-                </div>
-                <p class="item-title">
-                  エシカル暮らすメイト 7Days Challenge #DAY0 KICKOFF
-                  エシカルな暮らしはどうできる？活動前夜に語らう。
-                </p>
-                <span class="hashtag-number">2021.0520</span>
-                <span class="hashtag"><a href="#">#SDGs / ESG</a></span>
-              </div>
-            </li>
-            <li class="pickup__list__item">
-              <img src="~/assets/images/kv.jpg" />
-              <div class="pickup__list__item__ditail">
-                <div class="tags">
-                  <p class="tag"><span class="tag-gold">EVENT</span></p>
-                  <p class="tag">
-                    <span class="fs--12 fw--700">オンライン</span>
-                  </p>
-                </div>
-                <p class="item-title">
-                  「女性発の新事業」を阻む4つの壁とは？
-                  誰もが輝くための場づくりとルールメイキング
-                </p>
-                <span class="hashtag-number">2021.0518</span>
-                <span class="hashtag"><a href="#">#SDGs / ESG</a></span>
-                <span class="hashtag"><a href="#">#事業開発</a></span>
-                <span class="hashtag"><a href="#">#サービスデザイン</a></span>
-              </div>
-            </li>
-            <li class="pickup__list__item">
-              <img src="~/assets/images/kv.jpg" />
-              <div class="pickup__list__item__ditail">
-                <div class="tags">
-                  <p class="tag"><span class="tag-gold">EVENT</span></p>
-                  <p class="tag">
-                    <span class="fs--12 fw--700">オンライン</span>
-                  </p>
-                </div>
-                <p class="item-title">
-                  Dcraft デザイン経営リーダーズゼミ 成果報告会
-                </p>
-                <span class="hashtag-number">2021.0525</span>
-                <span class="hashtag"><a href="#">##デザイン経営</a></span>
-                <span class="hashtag"><a href="#">#Project-OnGoing</a></span>
-                <span class="hashtag"><a href="#">#ブランド体験</a></span>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="btn-viewmore">
-          <div class="btn-inner">
-            <a href=""><span>もっと見る</span></a>
-          </div>
-        </div>
-        <div class="btn btn__plus btn-animation">
-        <div class="eff eff01"></div>
-          <a href="#"><span class="btn-text">その他プロジェクトを見る</span></a>
-        </div>
+    <!-- section 02 -->
+    <div id="contents">
+      <div class="title title__center">
+        <h2 class="h2-center">
+          <span class="h2-small">Pickup Contents</span>
+          Events<span class="slashーsmall">/</span>News<span
+            class="slashーsmall"
+            >/</span
+          >Columns
+        </h2>
       </div>
-
-      <!-- section 03 -->
-      <div id="contents">
-        <div class="title">
-          <h2>
-            How We Work
-            <span class="h2-small">Findings ＆ Methods</span>
-          </h2>
-          <p class="copy">
-            私たちの考えかた、つくりかた。未知を探索する旅の途上で見つけた“創造性の種”
-          </p>
-        </div>
-        <div class="works">
-          <div class="works__slide">
+      <div class="pickup">
+        <ul class="pickup__list">
+          <li class="pickup__list__item">
             <img src="~/assets/images/kv.jpg" />
-          </div>
-          <div class="works__list">
-            <!-- works left -->
-            <div class="works__list__inner">
-              <ul class="works__list__left">
-                <li class="works__list__left__item">
-                  <ul class="left-inner">
-                    <li class="thumb01">
-                      <img src="~/assets/images/kv.jpg" />
-                    </li>
-                    <li class="text01">
-                      <span class="hashtag-number">2021.06.02</span>
-                      <p class="item-title">
-                        ええ空気を探して vol.1<br />
-                        テクノロジーの研究者と探る場作りのヒント<br />
-                        (現代アーティスト/研究者 川端 渉)
-                      </p>
-                      <p class="look-icon"><span></span>104</p>
-                      <span class="hashtag"><a href="#">#対談・鼎談</a></span>
-                      <span class="hashtag"
-                        ><a href="#">#COUNTER POINT</a></span
-                      >
-                      <span class="hashtag"><a href="#">#空間デザイン</a></span>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <div class="btn-viewmore">
-                <div class="btn-inner">
-                  <a href=""><span>もっと見る</span></a>
-                </div>
+            <div class="pickup__list__item__ditail">
+              <div class="tags">
+                <p class="tag"><span class="tag-gold">EVENT</span></p>
+                <p class="tag">
+                  <span class="fs--12 fw--700">オンライン</span>
+                </p>
               </div>
+              <p class="item-title">
+                「手に取る機会を取り戻す」コミュニケーションツールのデザイン ー
+                事例：東レ ウルトラスエード x 1518
+              </p>
+              <span class="hashtag-number">2021.0602</span>
+              <span class="hashtag"><a href="#">#大学</a></span>
             </div>
-            <!-- works right -->
-            <div class="works__list__right">
-              <p class="works__list__right__title">Popular Post</p>
-              <ul class="works__list__right__inner">
-                <li>
-                  <ul class="right-inner">
-                    <li class="thumb02">
-                      <img src="~/assets/images/kv.jpg" />
-                    </li>
-                    <li class="text02">
-                      <span class="hashtag-name">鈴木 真理子</span>
-                      <p class="look-icon"><span></span>104</p>
-                      <p class="item-title">
-                        ボトムアップで始まった、ロフトワークの“創造的な組織づくり”<br />
-                        「NANDA会」レポート
-                      </p>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+          </li>
+          <li class="pickup__list__item">
+            <img src="~/assets/images/kv.jpg" />
+            <div class="pickup__list__item__ditail">
+              <div class="tags">
+                <p class="tag"><span class="tag-gold">EVENT</span></p>
+                <p class="tag">
+                  <span class="fs--12 fw--700"
+                    >オンライン（zoom）＋オフライン開催</span
+                  >
+                </p>
+              </div>
+              <p class="item-title">
+                [SMBCグループ・ロフトワーク共催]
+                寄付のデザイン−寄付から生まれるサステナブルな社会とは？
+              </p>
+              <span class="hashtag-number">2021.0602</span>
             </div>
-          </div>
-        </div>
-        <div class="btn btn__plus btn-animation">
-        <div class="eff eff01"></div>
-          <a href="#"><span class="btn-text">How We Work 詳しくはこちら</span></a>
+          </li>
+          <li class="pickup__list__item">
+            <img src="~/assets/images/kv.jpg" />
+            <div class="pickup__list__item__ditail">
+              <div class="tags">
+                <p class="tag"><span class="tag-gold">EVENT</span></p>
+                <p class="tag">
+                  <span class="fs--12 fw--700">オンライン+名古屋</span>
+                </p>
+              </div>
+              <p class="item-title">
+                組織変革をデザインするための公開相談会 ー
+                元マッキンゼー東京支社長、横山禎徳氏に学ぶ
+              </p>
+              <span class="hashtag-number">2021.0601</span>
+              <span class="hashtag"><a href="#">#デザイン経営</a></span>
+              <span class="hashtag"><a href="#">#デザインリサーチ</a></span>
+            </div>
+          </li>
+          <li class="pickup__list__item">
+            <img src="~/assets/images/kv.jpg" />
+            <div class="pickup__list__item__ditail">
+              <div class="tags">
+                <p class="tag"><span class="tag-gold">EVENT</span></p>
+                <p class="tag">
+                  <span class="fs--12 fw--700">オンライン</span>
+                </p>
+              </div>
+              <p class="item-title">
+                エシカル暮らすメイト 7Days Challenge #DAY0 KICKOFF
+                エシカルな暮らしはどうできる？活動前夜に語らう。
+              </p>
+              <span class="hashtag-number">2021.0520</span>
+              <span class="hashtag"><a href="#">#SDGs / ESG</a></span>
+            </div>
+          </li>
+          <li class="pickup__list__item">
+            <img src="~/assets/images/kv.jpg" />
+            <div class="pickup__list__item__ditail">
+              <div class="tags">
+                <p class="tag"><span class="tag-gold">EVENT</span></p>
+                <p class="tag">
+                  <span class="fs--12 fw--700">オンライン</span>
+                </p>
+              </div>
+              <p class="item-title">
+                「女性発の新事業」を阻む4つの壁とは？
+                誰もが輝くための場づくりとルールメイキング
+              </p>
+              <span class="hashtag-number">2021.0518</span>
+              <span class="hashtag"><a href="#">#SDGs / ESG</a></span>
+              <span class="hashtag"><a href="#">#事業開発</a></span>
+              <span class="hashtag"><a href="#">#サービスデザイン</a></span>
+            </div>
+          </li>
+          <li class="pickup__list__item">
+            <img src="~/assets/images/kv.jpg" />
+            <div class="pickup__list__item__ditail">
+              <div class="tags">
+                <p class="tag"><span class="tag-gold">EVENT</span></p>
+                <p class="tag">
+                  <span class="fs--12 fw--700">オンライン</span>
+                </p>
+              </div>
+              <p class="item-title">
+                Dcraft デザイン経営リーダーズゼミ 成果報告会
+              </p>
+              <span class="hashtag-number">2021.0525</span>
+              <span class="hashtag"><a href="#">##デザイン経営</a></span>
+              <span class="hashtag"><a href="#">#Project-OnGoing</a></span>
+              <span class="hashtag"><a href="#">#ブランド体験</a></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="btn-viewmore">
+        <div class="btn-inner btn-animation">
+          <div class="eff eff02"></div>
+          <a href=""><span>もっと見る</span></a>
         </div>
       </div>
+      <div class="btn btn__plus btn-animation">
+        <div class="eff eff01"></div>
+        <a href="#"><span class="btn-text">その他プロジェクトを見る</span></a>
+      </div>
+    </div>
+
+    <!-- section 03 -->
+    <div id="contents">
+      <div class="title">
+        <h2>
+          How We Work
+          <span class="h2-small">Findings ＆ Methods</span>
+        </h2>
+        <p class="copy">
+          私たちの考えかた、つくりかた。未知を探索する旅の途上で見つけた“創造性の種”
+        </p>
+      </div>
+      <div class="works">
+        <div class="works__slide">
+          <img src="~/assets/images/kv.jpg" />
+        </div>
+        <div class="works__list">
+          <!-- works left -->
+          <div class="works__list__inner">
+            <ul class="works__list__left">
+              <li class="works__list__left__item">
+                <ul class="left-inner">
+                  <li class="thumb01">
+                    <img src="~/assets/images/kv.jpg" />
+                  </li>
+                  <li class="text01">
+                    <span class="hashtag-number">2021.06.02</span>
+                    <p class="item-title">
+                      ええ空気を探して vol.1<br />
+                      テクノロジーの研究者と探る場作りのヒント<br />
+                      (現代アーティスト/研究者 川端 渉)
+                    </p>
+                    <p class="look-icon"><span></span>104</p>
+                    <span class="hashtag"><a href="#">#対談・鼎談</a></span>
+                    <span class="hashtag"><a href="#">#COUNTER POINT</a></span>
+                    <span class="hashtag"><a href="#">#空間デザイン</a></span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="btn-viewmore">
+              <div class="btn-inner btn-animation">
+                <div class="eff eff02"></div>
+                <a href=""><span>もっと見る</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- works right -->
+          <div class="works__list__right">
+            <p class="works__list__right__title">Popular Post</p>
+            <ul class="works__list__right__inner">
+              <li>
+                <ul class="right-inner">
+                  <li class="thumb02">
+                    <img src="~/assets/images/kv.jpg" />
+                  </li>
+                  <li class="text02">
+                    <span class="hashtag-name">鈴木 真理子</span>
+                    <p class="look-icon"><span></span>104</p>
+                    <p class="item-title">
+                      ボトムアップで始まった、ロフトワークの“創造的な組織づくり”<br />
+                      「NANDA会」レポート
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="btn btn__plus btn-animation">
+        <div class="eff eff01"></div>
+        <a href="#"><span class="btn-text">How We Work 詳しくはこちら</span></a>
+      </div>
+    </div>
 
     <!-- section 04 -->
-      <div id="contents">
-        <!-- <div class="title">
+    <div id="contents">
+      <!-- <div class="title">
           <h2>
             How We Work
             <span class="h2-small">Findings ＆ Methods</span>
@@ -344,40 +344,39 @@
           </p>
         </div> -->
 
-        <div class="accsess">
+      <div class="accsess">
         <!-- accsess left -->
-          <div class="accsess__slide">
-            <img src="~/assets/images/kv.jpg" />
-          </div>
+        <div class="accsess__slide">
+          <img src="~/assets/images/kv.jpg" />
+        </div>
+        <!-- accsess right -->
+        <div class="accsess__list">
           <!-- accsess right -->
-          <div class="accsess__list">
-            <!-- accsess right -->
-            <div class="accsess__list__right">
-              <p class="accsess__list__right__title">Popular Post</p>
-              <ul class="accsess__list__right__inner">
-                <li>
-                  <ul class="right-inner">
-                    <li class="thumb02">
-                      <img src="~/assets/images/kv.jpg" />
-                    </li>
-                    <li class="text02">
-                      <span class="hashtag-name">鈴木 真理子</span>
-                      <p class="look-icon"><span></span>104</p>
-                      <p class="item-title">
-                        ボトムアップで始まった、ロフトワークの“創造的な組織づくり”<br />
-                        「NANDA会」レポート
-                      </p>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+          <div class="accsess__list__right">
+            <p class="accsess__list__right__title">Popular Post</p>
+            <ul class="accsess__list__right__inner">
+              <li>
+                <ul class="right-inner">
+                  <li class="thumb02">
+                    <img src="~/assets/images/kv.jpg" />
+                  </li>
+                  <li class="text02">
+                    <span class="hashtag-name">鈴木 真理子</span>
+                    <p class="look-icon"><span></span>104</p>
+                    <p class="item-title">
+                      ボトムアップで始まった、ロフトワークの“創造的な組織づくり”<br />
+                      「NANDA会」レポート
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="btn btn__plus btn-animation">
+      </div>
+      <div class="btn btn__plus btn-animation">
         <div class="eff eff01"></div>
-          <a href="#"><span class="btn-text">How We Work 詳しくはこちら</span></a>
-        </div>
+        <a href="#"><span class="btn-text">How We Work 詳しくはこちら</span></a>
       </div>
     </div>
   </div>
@@ -562,11 +561,17 @@ export default {};
       width: 100%;
       height: 100%;
       padding: 1.42857em 0;
-      border: 1px solid #000;
+      border: 1px solid $color-black;
       cursor: pointer;
       color: #1a1a1a;
+      &:hover {
+        border: 1px solid #fff100;
+        transition: all 0.2s ease;
+        box-shadow: 0 0 3rem #999;
+      }
     }
   }
+
   // contents works
   .works {
     &__slide {
@@ -665,7 +670,7 @@ export default {};
         }
         &__inner {
           > li {
-              position: relative;
+            position: relative;
             .right-inner {
               display: -webkit-flex;
               display: flex;
@@ -738,8 +743,8 @@ export default {};
       }
     }
   }
-// contents accsess
-.accsess {
+  // contents accsess
+  .accsess {
     &__slide {
       padding: 0 10rem;
       margin-bottom: 8rem;
@@ -836,7 +841,7 @@ export default {};
         }
         &__inner {
           > li {
-              position: relative;
+            position: relative;
             .right-inner {
               display: -webkit-flex;
               display: flex;
@@ -939,35 +944,42 @@ export default {};
 }
 
 // ボタン/hoverアニメーション
-  .btn-animation {
-    cursor: pointer;
+.btn-animation {
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  a {
+    transition: 1s;
+    z-index: 2;
     position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
-    a {
-      transition: 1s;
-      z-index: 2;
-      position: relative;
-    }
-    .eff {
-      left: -100%;
-      background: #fff100;
-      position: absolute;
-      top: 0;
-      z-index: 1;
-      // padding: 8rem 0;
-    }
-    .eff01 {
-      width: 100%;
-      height: 29.4rem;
-    }
   }
-  .btn-animation:hover .eff {
-    left: 0;
-    transition: all 0.2s ease;
+  .eff {
+    left: -100%;
+    background: #fff100;
+    position: absolute;
+    top: 0;
+    z-index: 1;
     // padding: 8rem 0;
   }
-  .btn-animation:hover a {
-    color: $color-black;
+  .eff01 {
+    width: 100%;
+    height: 29.4rem;
   }
+  .eff02 {
+    width: 40rem;
+    height: 6rem;
+    left: -110%;
+  }
+}
+.btn-animation:hover .eff {
+  left: 0;
+  transition: all 0.2s ease;
+}
+.btn-animation:hover a {
+  color: $color-black;
+}
+.btn-animation:hover .eff02 {
+  transition: all 0.3s ease;
+}
 </style>
