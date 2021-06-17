@@ -1,8 +1,15 @@
 <template>
   <div class="container">
-    <div class="kv">
+    <div class="visual">
       <img src="~/assets/images/kv.jpg" />
+      <div class="visual__controlbar">
+        <p class="v-copyright">©2021 Loftwork Inc. All rights reserved</p>
+      </div>
     </div>
+    <!-- スクロールバー -->
+    <!-- <div class="">
+      <p class=""></p>
+    </div> -->
     <!-- section 01 -->
     <div id="contents">
       <div class="title">
@@ -384,6 +391,7 @@
 
 <script>
 export default {};
+
 </script>
 
 <style lang="scss" scoped>
@@ -394,9 +402,33 @@ export default {};
   width: 100%;
   overflow: hidden;
 }
-.kv {
+.visual {
+  position: relative;
   img {
     width: 100%;
+  }
+  &__controlbar {
+    min-width: 100rem;
+    width: 110rem;
+    height: 6.6rem;
+    background-color: $color-white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    .v-copyright {
+      font-family: $font-accent;
+      color: $color-black;
+      margin: auto;
+      text-align: left;
+      font-weight: 400;
+      font-size: 1rem;
+      font-style: italic;
+      display: inline-block;
+      padding: 2.9rem 0;
+      padding-left: 2.8rem;
+    }
   }
 }
 
