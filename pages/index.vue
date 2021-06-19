@@ -2,8 +2,10 @@
   <div class="container">
     <div class="visual">
       <img src="~/assets/images/kv.jpg" />
-      <div class="visual__controlbar">
+      <div class="card-box">
+      <div class="visual__controlbar js-target card">
         <p class="v-copyright">©2021 Loftwork Inc. All rights reserved</p>
+      </div>
       </div>
     </div>
     <!-- スクロールバー -->
@@ -403,6 +405,37 @@ export default {
     // $(function () {
     //   $(".hoge1").css("color","blue")
     // });
+  // ヴィジュアル下のバーを倒す
+  const map = (val, inputMin, inputMax, outputMin, outputMax) => {
+	 if (val <= inputMin) return false;
+	 if (val >= inputMax) return false;
+   const p = (outputMax - outputMin) / (inputMax - inputMin)
+  return (val - inputMin) * p + outputMin
+  }
+  let target;
+  let windowHeight;
+  let windowHalfY;
+
+  const handleScroll = () => {
+	  const scrollY = window.scrollY;
+	  const val = map(scrollY, windowHalfY, windowHeight, 0, 95)
+	  target.style.transform = `rotateX(${val}deg)`
+  }
+  const resize = () => {
+    windowHeight = window.innerHeight
+    windowHalfY = windowHeight / 2
+  }
+  const handleResize = () => {
+	resize();
+  }
+  const init = () => {
+	target = document.querySelector('.js-target');
+	resize();
+
+	window.addEventListener('scroll', handleScroll)
+	window.addEventListener('resize', handleResize)
+  }
+  init();
   },
 };
 </script>
@@ -1031,4 +1064,12 @@ export default {
 .btn-animation:hover .eff02 {
   transition: all 0.3s ease;
 }
+// ヴィジュアル下のバーを倒す
+/* 下へ */
+  .card-box {
+    perspective:60rem;
+    }
+    .card-box .js-target {
+        transform-origin:50% 100%;
+  }
 </style>
