@@ -386,108 +386,33 @@
         <a href="#"><span class="btn-text">How We Work 詳しくはこちら</span></a>
       </div>
     </div>
-    <div class="btn-wrap">
-      <a href="#" class="btn modal-open" data-modal-open="modal-1"
-        >modal open !</a
-      >
-    </div>
-    <div class="btn-wrap">
-      <a href="#" class="btn modal-open" data-modal-open="modal-2"
-        >モーダルが上がるよ !</a
-      >
-    </div>
-    <div class="btn-wrap">
-      <a href="#" class="btn modal-open" data-modal-open="modal-3"
-        >モーダルの内容が多い時 !</a
-      >
-    </div>
-    <!-- modal -->
-    <div class="modal" data-modal="modal-1">
-      <div class="modal-cover"></div>
-      <div class="modal-inner">
-        <div class="modal-content">
-          <div class="modal-content-ttl">modal</div>
-          <p>This is a modal that does not use jQuery.</p>
-          <div class="btn-wrap">
-            <a href="#" class="btn btn-close">close </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal" data-modal="modal-2">
-      <div class="modal-cover"></div>
-      <div class="modal-inner">
-        <div class="modal-content">
-          <div class="modal-content-ttl">モーダル</div>
-          <p>jQueryを使わないモーダルだよ</p>
-          <div class="btn-wrap">
-            <a href="#" class="btn btn-close">閉じる </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal" data-modal="modal-3">
-      <div class="modal-cover"></div>
-      <div class="modal-inner">
-        <div class="modal-content">
-          <div class="modal-content-ttl">モーダル</div>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <p>テキスト</p>
-          <div class="btn-wrap">
-            <a href="#" class="btn btn-close">閉じる </a>
-          </div>
-        </div>
-      </div>
-    </div>
+
+    <!-- // 動作確認コード
+    <div class="hoge1">
+      このテキストは青くなりますこのテキストは青くなります
+    </div> -->
   </div>
 </template>
 
 <script>
-import AppJs from '~/assets/js/app.js'
-
 export default {
-  components: {
-    AppJs,
-  },
+  components: {},
 
-  mounted() {
-    // var doAnimations = function () {
-    //   var offset = $(window).scrollTop() + $(window).height(),
-    //     $animatables = $('.animatable');
-    //   if ($animatables.length == 0) {
-    //     $(window).off('scroll', doAnimations);
-    //   }
-    //   $animatables.each(function (i, element) {
-    //     var $animatable = $(this);
-    //     if (($animatable.offset().top + $animatable.height() - 30) < offset) {
-    //       $animatable.removeClass('animatable').addClass('animated');
-    //     }
-    //   });
-    // };
-    // $(window).on('scroll', doAnimations);
-    // $(window).trigger('scroll');
+  mounted: function () {
+    // 動作確認コード
+    // $(function () {
+    //   $(".hoge1").css("color","blue")
+    // });
   },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "~assets/scss/variables";
+// 動作確認コード
+// .hoge1{
+// color:#999;
+// }
 
 .container {
   margin: 0 auto;
@@ -1105,151 +1030,5 @@ export default {
 }
 .btn-animation:hover .eff02 {
   transition: all 0.3s ease;
-}
-
-// 仮
-html {
-  font-size: 62.5%;
-}
-body {
-  font-size: 1.4rem;
-}
-/* btn */
-.btn-wrap {
-  margin-top: 30px;
-  text-align: center;
-}
-.btn {
-  display: inline-block;
-  min-width: 165px;
-  position: relative;
-  text-decoration: none;
-  padding: 17.5px 10px;
-  text-align: center;
-  font-size: 1.2rem;
-  color: #636363;
-  background: #efefef;
-  vertical-align: middle;
-  /* transition: background .3s; */
-  transition: 0.3s;
-}
-.btn:hover {
-  background: #ddd;
-}
-/* modal */
-.modal {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  border: none;
-  opacity: 0;
-  z-index: -1;
-}
-.modal.btn-inner {
-  margin-top: 23.5px;
-}
-
-.modal-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.modal-inner {
-  width: 80vw;
-  max-width: 800px;
-  max-height: 80vh;
-  margin: auto;
-  padding: 15px;
-  background: #fff;
-  overflow-y: auto;
-  z-index: 1;
-}
-
-.modal-list-logo {
-  border-bottom: 1px solid #ebebeb;
-  padding-bottom: 25px;
-  text-align: center;
-}
-.modal-list-logo p {
-  margin-top: 15px;
-  font-size: 1.2rem;
-}
-
-.modal-content {
-  margin-top: 25px;
-  text-align: left;
-}
-
-.modal-content-ttl {
-  font-size: 2rem;
-}
-/* modal animation */
-.modal.is-open {
-  animation: modal_open 0.5s ease forwards;
-}
-.modal.is-open.modal-inner {
-  animation: modal_inner_open 0.5s ease forwards;
-}
-.modal.is-close {
-  animation: modal_close 0.5s ease forwards;
-}
-.modal.is-close.modal-inner {
-  animation: modal_inner_close 0.5s ease forwards;
-}
-@keyframes modal_open {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-    z-index: 10000;
-  }
-}
-
-@keyframes modal_inner_open {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes modal_close {
-  0% {
-    z-index: 10000;
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes modal_inner_close {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
 }
 </style>
