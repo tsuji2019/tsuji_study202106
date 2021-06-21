@@ -1,22 +1,15 @@
 <template>
   <footer class="footer">
-    <div class="f-btn01 btn-animation">
-      <div class="eff f-eff01"></div>
-      <a href="#">
-        <p class="btn-title">オンライン相談</p>
-        <span class="btn-text"
-          >プロジェクトのご相談を随時受付中！<br />
+      <a href="#" class="f-btn01 btn bgleft"><p class="btn-text">
+        <span class="btn-title">オンライン相談</span><br>
+          プロジェクトのご相談を随時受付中！<br />
           「ロフトワークにこんなこと頼めますか？」「まだプロジェクト化していないのだけど、早めに相談したい」<br />
-          など、まずはお気軽にお声掛けください。オンライン相談はその場で日時予約が可能です。
-        </span>
-      </a>
-    </div>
+          など、まずはお気軽にお声掛けください。オンライン相談はその場で日時予約が可能です。</p></a>
     <div class="f-btn02">
       <ul>
-        <li class="btn-animation">
-          <div class="eff f-eff02"></div>
-          <a href="">
-            <div class="btn-inner">
+        <li>
+          <a href="" class="btn-ft bgleft">
+            <div class="btn-inner btn-text">
               <p class="btn-icon"><CalenderSvg /></p>
               <p class="btn-title">開催予定のイベント</p>
               <span class="btn-text">
@@ -26,10 +19,9 @@
             </div>
           </a>
         </li>
-        <li class="btn-animation">
-          <div class="eff f-eff02"></div>
-          <a href="">
-            <div class="btn-inner">
+        <li>
+          <a href="" class="btn-ft bgleft">
+            <div class="btn-inner btn-text">
               <p class="btn-icon"><BuildingSvg /></p>
               <p class="btn-title">開催予定のイベント</p>
               <span class="btn-text">
@@ -39,10 +31,9 @@
             </div>
           </a>
         </li>
-        <li class="btn-animation">
-          <div class="eff f-eff02"></div>
-          <a href="">
-            <div class="btn-inner">
+        <li>
+          <a href="" class="btn-ft bgleft">
+            <div class="btn-inner btn-text">
               <p class="btn-icon"><MailmagazineSvg /></p>
               <p class="btn-title">開催予定のイベント</p>
               <span class="btn-text">
@@ -145,14 +136,14 @@ footer {
     background-color: #e6da00;
     padding: 8rem 0;
     width: 100%;
-    height: 29.4rem;
+    // height: 29.4rem;
     &:hover {
       background-color: #fff880;
     }
-    .f-eff01 {
-      width: 100%;
-      height: 29.4rem;
-    }
+    // .f-eff01 {
+    //   width: 100%;
+    //   height: 29.4rem;
+    // }
     > a {
       color: $color-black;
       > p {
@@ -170,20 +161,13 @@ footer {
       justify-content: space-between;
       > li {
         text-align: center;
-        background: #2e334f;
         width: -webkit-calc(100% / 3);
         width: calc(100% / 3);
         position: relative;
-        padding: 8rem 0;
-        height: 46.4rem;
-        .f-eff02 {
-          width: 100%;
-          height: 46.4rem;
-        }
         > a {
           color: $color-white;
           > .btn-inner {
-            padding: 7rem 0;
+            padding: 16rem 0;
             display: inline-block;
           }
         }
@@ -245,8 +229,8 @@ footer {
     padding: 8rem 0;
   }
   .btn-title {
-    font-size: 2.4rem;
-    padding: 0 0 3.8rem;
+    font-size: 2.3rem;
+    padding: 0 0 2.2rem;
     display: inline-block;
     font-weight: 900;
     z-index: 2;
@@ -258,13 +242,26 @@ footer {
     display: block;
     font-weight: 300;
     line-height: 2;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.01rem;
     z-index: 2;
   }
   .btn-icon {
-    margin-bottom: 2.8rem;
+    margin-bottom: 1rem;
   }
   // ボタン/hoverアニメーション
+  .btn-ft {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  background: #2e334f;
+  width: 100%;
+  height: 100%;
+}
+.btn-ft span {
+  position: relative;
+  z-index: 3;
+}
   .btn-animation {
     cursor: pointer;
     position: relative;
@@ -275,25 +272,10 @@ footer {
       z-index: 2;
       position: relative;
     }
-    .eff {
-      left: -100%;
-      background: #fff100;
-      position: absolute;
-      top: 0;
-      z-index: 1;
-      // padding: 8rem 0;
-    }
+  svg {
+    fill: currentColor;
   }
-  .btn-animation:hover .eff {
-    left: 0;
-    transition: all 0.2s ease;
-  }
-  .btn-animation:hover a {
-    color: $color-black;
-  }
-  .btn-animation:hover a .btn-icon {
-    color: $color-black;
-  }
+}
   svg {
     fill: currentColor;
   }

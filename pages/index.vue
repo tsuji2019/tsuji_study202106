@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
+  <div id="container">
     <div class="visual">
       <img src="~/assets/images/kv.jpg" />
       <div class="card-box">
-      <div class="visual__controlbar js-target card">
-        <p class="v-copyright">©2021 Loftwork Inc. All rights reserved</p>
-      </div>
+        <div class="visual__controlbar js-target card">
+          <p class="v-copyright">©2021 Loftwork Inc. All rights reserved</p>
+        </div>
       </div>
     </div>
     <!-- スクロールバー -->
@@ -126,10 +126,9 @@
           </li>
         </ul>
       </div>
-      <div class="btn btn__plus btn-animation">
-        <div class="eff eff01"></div>
-        <a href="#"><span class="btn-text">その他プロジェクトを見る</span></a>
-      </div>
+        <a href="#" class="btn bgleft btn__plus"
+          ><span class="btn-text">その他プロジェクトを見る</span></a
+        >
     </div>
 
     <!-- section 02 -->
@@ -255,15 +254,13 @@
         </ul>
       </div>
       <div class="btn-viewmore">
-        <div class="btn-inner btn-animation">
-          <div class="eff eff02"></div>
+        <div class="btn-inner">
           <a href=""><span>もっと見る</span></a>
         </div>
       </div>
-      <div class="btn btn__plus btn-animation">
-        <div class="eff eff01"></div>
-        <a href="#"><span class="btn-text">その他プロジェクトを見る</span></a>
-      </div>
+        <a href="#" class="btn bgleft btn__plus"
+          ><span class="btn-text">その他プロジェクトを見る</span></a
+        >
     </div>
 
     <!-- section 03 -->
@@ -306,9 +303,8 @@
               </li>
             </ul>
             <div class="btn-viewmore">
-              <div class="btn-inner btn-animation">
-                <div class="eff eff02"></div>
-                <a href=""><span>もっと見る</span></a>
+              <div class="btn-inner">
+                <a href="#" class="btn2 bgleft"><span>もっと見る</span></a>
               </div>
             </div>
           </div>
@@ -335,24 +331,13 @@
           </div>
         </div>
       </div>
-      <div class="btn btn__plus btn-animation">
-        <div class="eff eff01"></div>
-        <a href="#"><span class="btn-text">How We Work 詳しくはこちら</span></a>
-      </div>
+        <a href="#" class="btn bgleft"
+          ><span class="btn-text btn__plus">How We Work 詳しくはこちら</span></a
+        >
     </div>
 
     <!-- section 04 -->
     <div id="contents">
-      <!-- <div class="title">
-          <h2>
-            How We Work
-            <span class="h2-small">Findings ＆ Methods</span>
-          </h2>
-          <p class="copy">
-            私たちの考えかた、つくりかた。未知を探索する旅の途上で見つけた“創造性の種”
-          </p>
-        </div> -->
-
       <div class="accsess">
         <!-- accsess left -->
         <div class="accsess__slide">
@@ -383,10 +368,8 @@
           </div>
         </div>
       </div>
-      <div class="btn btn__plus btn-animation">
-        <div class="eff eff01"></div>
-        <a href="#"><span class="btn-text">How We Work 詳しくはこちら</span></a>
-      </div>
+        <a href="#" class="btn bgleft btn__plus">
+          <span class="btn-text">How We Work 詳しくはこちら</span></a>
     </div>
 
     <!-- // 動作確認コード
@@ -401,41 +384,37 @@ export default {
   components: {},
 
   mounted: function () {
-    // 動作確認コード
-    // $(function () {
-    //   $(".hoge1").css("color","blue")
-    // });
-  // ヴィジュアル下のバーを倒す
-  const map = (val, inputMin, inputMax, outputMin, outputMax) => {
-	 if (val <= inputMin) return false;
-	 if (val >= inputMax) return false;
-   const p = (outputMax - outputMin) / (inputMax - inputMin)
-  return (val - inputMin) * p + outputMin
-  }
-  let target;
-  let windowHeight;
-  let windowHalfY;
+    // ヴィジュアル下のコントロールバーを倒す
+    const map = (val, inputMin, inputMax, outputMin, outputMax) => {
+      if (val <= inputMin) return false;
+      if (val >= inputMax) return false;
+      const p = (outputMax - outputMin) / (inputMax - inputMin);
+      return (val - inputMin) * p + outputMin;
+    };
+    let target;
+    let windowHeight;
+    let windowHalfY;
 
-  const handleScroll = () => {
-	  const scrollY = window.scrollY;
-	  const val = map(scrollY, windowHalfY, windowHeight, 0, 95)
-	  target.style.transform = `rotateX(${val}deg)`
-  }
-  const resize = () => {
-    windowHeight = window.innerHeight
-    windowHalfY = windowHeight / 2
-  }
-  const handleResize = () => {
-	resize();
-  }
-  const init = () => {
-	target = document.querySelector('.js-target');
-	resize();
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const val = map(scrollY, windowHalfY, windowHeight, 0, 95);
+      target.style.transform = `rotateX(${val}deg)`;
+    };
+    const resize = () => {
+      windowHeight = window.innerHeight;
+      windowHalfY = windowHeight / 2;
+    };
+    const handleResize = () => {
+      resize();
+    };
+    const init = () => {
+      target = document.querySelector(".js-target");
+      resize();
 
-	window.addEventListener('scroll', handleScroll)
-	window.addEventListener('resize', handleResize)
-  }
-  init();
+      window.addEventListener("scroll", handleScroll);
+      window.addEventListener("resize", handleResize);
+    };
+    init();
   },
 };
 </script>
@@ -447,7 +426,7 @@ export default {
 // color:#999;
 // }
 
-.container {
+#container {
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
@@ -629,29 +608,8 @@ export default {
     }
   }
   .btn-viewmore {
-    display: block;
-    padding: 0;
-    max-width: 40rem;
     text-align: center;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.6;
-    margin: 0 auto;
     padding: 6rem 0 12rem;
-    .btn-inner {
-      display: block;
-      width: 100%;
-      height: 100%;
-      padding: 1.42857em 0;
-      border: 1px solid $color-black;
-      cursor: pointer;
-      color: #1a1a1a;
-      &:hover {
-        border: 1px solid #fff100;
-        transition: all 0.2s ease;
-        box-shadow: 0 0 3rem #999;
-      }
-    }
   }
 
   // contents works
@@ -1026,50 +984,50 @@ export default {
 }
 
 // ボタン/hoverアニメーション
-.btn-animation {
-  cursor: pointer;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
-  a {
-    transition: 1s;
-    z-index: 2;
-    position: relative;
-  }
-  .eff {
-    left: -100%;
-    background: #fff100;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    // padding: 8rem 0;
-  }
-  .eff01 {
-    width: 100%;
-    height: 29.4rem;
-  }
-  .eff02 {
-    width: 40rem;
-    height: 6rem;
-    left: -110%;
-  }
-}
-.btn-animation:hover .eff {
-  left: 0;
-  transition: all 0.2s ease;
-}
-.btn-animation:hover a {
-  color: $color-black;
-}
-.btn-animation:hover .eff02 {
-  transition: all 0.3s ease;
-}
+// .btn-animation {
+//   cursor: pointer;
+//   position: relative;
+//   box-sizing: border-box;
+//   overflow: hidden;
+//   a {
+//     transition: 1s;
+//     z-index: 2;
+//     position: relative;
+//   }
+//   .eff {
+//     left: -100%;
+//     background: #fff100;
+//     position: absolute;
+//     top: 0;
+//     z-index: 1;
+//     // padding: 8rem 0;
+//   }
+//   .eff01 {
+//     width: 100%;
+//     height: 29.4rem;
+//   }
+//   .eff02 {
+//     width: 40rem;
+//     height: 6rem;
+//     left: -110%;
+//   }
+// }
+// .btn-animation:hover .eff {
+//   left: 0;
+//   transition: all 0.2s ease;
+// }
+// .btn-animation:hover a {
+//   color: $color-black;
+// }
+// .btn-animation:hover .eff02 {
+//   transition: all 0.3s ease;
+// }
 // ヴィジュアル下のバーを倒す
 /* 下へ */
-  .card-box {
-    perspective:60rem;
-    }
-    .card-box .js-target {
-        transform-origin:50% 100%;
-  }
+.card-box {
+  perspective: 60rem;
+}
+.card-box .js-target {
+  transform-origin: 50% 100%;
+}
 </style>
