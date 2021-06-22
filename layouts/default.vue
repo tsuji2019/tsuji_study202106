@@ -92,6 +92,7 @@ export default {
   font-weight: bold;
 }
 /*========= ハンバーガーボタン ===============*/
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
 .openbtn {
   position: fixed;
   z-index: 9999;
