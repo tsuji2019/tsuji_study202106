@@ -1,7 +1,7 @@
 <template>
   <div id="container">
+    <TheHero />
     <div class="visual">
-      <img src="~/assets/images/kv.jpg" />
       <div class="card-box">
         <div class="visual__controlbar js-target card">
           <p class="v-copyright">©2021 Loftwork Inc. All rights reserved</p>
@@ -26,7 +26,7 @@
       <div class="whatwedo">
         <ul class="whatwedo__list">
           <li class="whatwedo__list__item">
-            <img src="~/assets/images/kv.jpg" />
+            <img src="~/assets/images/kv2.jpg" />
             <div class="whatwedo__list__item__ditail">
               <div class="tags">
                 <p class="tag">
@@ -126,9 +126,9 @@
           </li>
         </ul>
       </div>
-        <a href="#" class="btn bgleft btn__plus"
-          ><span class="btn-text">その他プロジェクトを見る</span></a
-        >
+      <a href="#" class="btn bgleft btn__plus"
+        ><span class="btn-text">その他プロジェクトを見る</span></a
+      >
     </div>
 
     <!-- section 02 -->
@@ -258,9 +258,9 @@
           <a href=""><span>もっと見る</span></a>
         </div>
       </div>
-        <a href="#" class="btn bgleft btn__plus"
-          ><span class="btn-text">その他プロジェクトを見る</span></a
-        >
+      <a href="#" class="btn bgleft btn__plus"
+        ><span class="btn-text">その他プロジェクトを見る</span></a
+      >
     </div>
 
     <!-- section 03 -->
@@ -331,9 +331,9 @@
           </div>
         </div>
       </div>
-        <a href="#" class="btn bgleft btn__plus">
-          <span class="btn-text">How We Work 詳しくはこちら</span>
-        </a>
+      <a href="#" class="btn bgleft btn__plus">
+        <span class="btn-text">How We Work 詳しくはこちら</span>
+      </a>
     </div>
 
     <!-- section 04 -->
@@ -368,9 +368,9 @@
           </div>
         </div>
       </div>
-        <a href="#" class="btn bgleft btn__plus">
-          <span class="btn-text">How We Work 詳しくはこちら</span>
-        </a>
+      <a href="#" class="btn bgleft btn__plus">
+        <span class="btn-text">How We Work 詳しくはこちら</span>
+      </a>
     </div>
 
     <!-- // 動作確認コード
@@ -381,10 +381,30 @@
 </template>
 
 <script>
+import TheHero from "~/components/common/TheHero";
+
 export default {
-  components: {},
+  components: {
+    TheHero,
+  },
 
   mounted: function () {
+    // $(".slider").slick({
+    //   // スライダー
+    //   autoplay: true, //自動的に動き出すか。初期値はfalse。
+    //   autoplaySpeed: 3000, //次のスライドに切り替わる待ち時間
+    //   speed: 1000, //スライドの動きのスピード。初期値は300。
+    //   infinite: true, //スライドをループさせるかどうか。初期値はtrue。
+    //   slidesToShow: 1, //スライドを画面に3枚見せる
+    //   slidesToScroll: 1, //1回のスクロールで3枚の写真を移動して見せる
+    //   arrows: true, //左右の矢印あり
+    //   prevArrow: '<div class="slick-prev"></div>', //矢印部分PreviewのHTMLを変更
+    //   nextArrow: '<div class="slick-next"></div>', //矢印部分NextのHTMLを変更
+    //   dots: true, //下部ドットナビゲーションの表示
+    //   pauseOnFocus: false, //フォーカスで一時停止を無効
+    //   pauseOnHover: false, //マウスホバーで一時停止を無効
+    //   pauseOnDotsHover: false, //ドットナビゲーションをマウスホバーで一時停止を無効
+    // });
 
     // ヴィジュアル下のコントロールバーを倒す
     const map = (val, inputMin, inputMax, outputMin, outputMax) => {
@@ -435,10 +455,6 @@ export default {
 }
 .visual {
   position: relative;
-  // height: 100vh;
-  img {
-    width: 100%;
-  }
   &__controlbar {
     min-width: 100rem;
     width: 110rem;
