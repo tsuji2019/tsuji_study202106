@@ -1,39 +1,38 @@
 <template>
   <div id="container">
     <div id="slideshow">
-      <div class="control">
-        <button id="previous">&lt;</button>
-        <button id="next">&gt;</button>
-      </div>
       <ul id="slides">
-        <li class="slideActive">1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
+        <li class="slideActive"></li>
+        <li></li>
+        <li></li>
       </ul>
       <div class="pager">
         <ul>
-          <li id="first">1</li>
-          <li id="second">2</li>
-          <li id="third">3</li>
-          <li id="fourth">4</li>
-          <li id="fifth">5</li>
-          <li id="sixth">6</li>
+          <li id="first"></li>
+          <li id="second"></li>
+          <li id="third"></li>
         </ul>
       </div>
-      <div class="progressbar">
+      <!-- <div class="progressbar">
         <div class="full">
           <div class="progress"></div>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="visual">
-      <div class="card-box">
-        <div class="visual__controlbar js-target card">
-          <p class="v-copyright">©2021 Loftwork Inc. All rights reserved</p>
+      <div class="visual__controlbar js-target card">
+        <div class="control">
+          <button id="previous"></button>
+          <button id="next"></button>
         </div>
+        <!-- <div class="pager">
+        <ul>
+          <li id="first"></li>
+          <li id="second"></li>
+          <li id="third"></li>
+        </ul>
+        </div> -->
+        <p class="v-copyright">©2021 Loftwork Inc. All rights reserved</p>
       </div>
     </div>
     <!-- スクロールバー -->
@@ -480,30 +479,6 @@ export default {
       },
       false
     );
-    document.querySelector("#fourth").addEventListener(
-      "click",
-      function () {
-        slide = 3;
-        currentSlide();
-      },
-      false
-    );
-    document.querySelector("#fifth").addEventListener(
-      "click",
-      function () {
-        slide = 4;
-        currentSlide();
-      },
-      false
-    );
-    document.querySelector("#sixth").addEventListener(
-      "click",
-      function () {
-        slide = 5;
-        currentSlide();
-      },
-      false
-    );
     document.querySelector("#next").addEventListener(
       "click",
       function () {
@@ -568,7 +543,9 @@ export default {
   overflow: hidden;
 }
 .visual {
-  // position: relative;
+  perspective: 60rem;
+  z-index: 999;
+  position: relative;
   &__controlbar {
     min-width: 100rem;
     width: 110rem;
@@ -593,12 +570,12 @@ export default {
     }
   }
 }
+.visual .js-target {
+  transform-origin: 50% 100%;
+}
 
 #contents {
   margin: auto;
-  // margin-bottom: 500px;
-  // padding: 0 10rem;
-  // width: 1000px;
 
   // h2 タイトル
   .title {
@@ -1116,47 +1093,67 @@ export default {
   padding-top: 15px;
 }
 
-// ヴィジュアル下のバーを倒す
-/* 下へ */
-.card-box {
-  perspective: 60rem;
-}
-.card-box .js-target {
-  transform-origin: 50% 100%;
-}
 // スライダー
 #slideshow {
   line-height: 1;
-  font-family: Consolas, "Andale Mono", "Lucida Console",
-    "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
   position: relative;
   height: 100vh;
   width: 100vw;
+  z-index: 1;
 }
 .control {
-  width: 100%;
-  height: calc(100% - 36px);
-  position: absolute;
-  top: 36px;
+  width: 18rem;
+  height: 6.6rem;
   margin: 0;
   z-index: 99;
-  display: block;
 }
 .control > button {
-  width: 16.7%;
-  height: calc(100% - 36px);
+  width: 9rem;
+  height: 6.6rem;
   opacity: 1;
-  color: #212121;
-  background-color: transparent;
+  color: $color-black;
+  background-color: #e6e6e6;
   border: 0;
   cursor: pointer;
-  font-size: 50vh;
 }
 #previous {
-  float: left;
+  position: relative;
+  display: inline-block;
+  // padding-left: 20px;
+  &::before {
+    content: "";
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 0px;
+    border-top: solid 3px #1a1a1a;
+    border-right: solid 3px #1a1a1a;
+    transform: rotate(225deg);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
+
 #next {
-  float: right;
+  position: relative;
+  display: inline-block;
+  // padding-left: 20px;
+  &::before {
+    content: "";
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 0px;
+    border-top: solid 3px #1a1a1a;
+    border-right: solid 3px #1a1a1a;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 #slides {
   padding: 0;
@@ -1181,24 +1178,19 @@ export default {
   line-height: 100vh;
   text-align: center;
   color: #212121;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #slides li:first-child {
-  background: #f44336;
+  background-image: url("~/assets/images/kv.jpg");
 }
 #slides li:nth-child(2) {
-  background: #e91e63;
-}
-#slides li:nth-child(3) {
-  background: #9c27b0;
-}
-#slides li:nth-child(4) {
-  background: #673ab7;
-}
-#slides li:nth-child(5) {
-  background: #3f51b5;
+  background-image: url("~/assets/images/kv2.jpg");
 }
 #slides li:last-child {
-  background: #2196f3;
+  background-image: url("~/assets/images/kv3.jpg");
 }
 #slides li.slideActive {
   z-index: 2;
@@ -1213,15 +1205,6 @@ export default {
 }
 #third {
   background: #9c27b0;
-}
-#fourth {
-  background: #673ab7;
-}
-#fifth {
-  background: #3f51b5;
-}
-#sixth {
-  background: #2196f3;
 }
 .pager ul {
   display: table;
@@ -1258,5 +1241,8 @@ export default {
   100% {
     width: 100%;
   }
+}
+.visual {
+  z-index: 999;
 }
 </style>
