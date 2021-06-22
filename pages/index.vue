@@ -331,9 +331,9 @@
           </div>
         </div>
       </div>
-        <a href="#" class="btn bgleft"
-          ><span class="btn-text btn__plus">How We Work 詳しくはこちら</span></a
-        >
+        <a href="#" class="btn bgleft btn__plus">
+          <span class="btn-text">How We Work 詳しくはこちら</span>
+        </a>
     </div>
 
     <!-- section 04 -->
@@ -369,7 +369,8 @@
         </div>
       </div>
         <a href="#" class="btn bgleft btn__plus">
-          <span class="btn-text">How We Work 詳しくはこちら</span></a>
+          <span class="btn-text">How We Work 詳しくはこちら</span>
+        </a>
     </div>
 
     <!-- // 動作確認コード
@@ -384,6 +385,7 @@ export default {
   components: {},
 
   mounted: function () {
+
     // ヴィジュアル下のコントロールバーを倒す
     const map = (val, inputMin, inputMax, outputMin, outputMax) => {
       if (val <= inputMin) return false;
@@ -433,6 +435,7 @@ export default {
 }
 .visual {
   position: relative;
+  // height: 100vh;
   img {
     width: 100%;
   }
@@ -983,45 +986,6 @@ export default {
   padding-top: 15px;
 }
 
-// ボタン/hoverアニメーション
-// .btn-animation {
-//   cursor: pointer;
-//   position: relative;
-//   box-sizing: border-box;
-//   overflow: hidden;
-//   a {
-//     transition: 1s;
-//     z-index: 2;
-//     position: relative;
-//   }
-//   .eff {
-//     left: -100%;
-//     background: #fff100;
-//     position: absolute;
-//     top: 0;
-//     z-index: 1;
-//     // padding: 8rem 0;
-//   }
-//   .eff01 {
-//     width: 100%;
-//     height: 29.4rem;
-//   }
-//   .eff02 {
-//     width: 40rem;
-//     height: 6rem;
-//     left: -110%;
-//   }
-// }
-// .btn-animation:hover .eff {
-//   left: 0;
-//   transition: all 0.2s ease;
-// }
-// .btn-animation:hover a {
-//   color: $color-black;
-// }
-// .btn-animation:hover .eff02 {
-//   transition: all 0.3s ease;
-// }
 // ヴィジュアル下のバーを倒す
 /* 下へ */
 .card-box {

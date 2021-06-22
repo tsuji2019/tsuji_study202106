@@ -18,6 +18,7 @@ export default {
     TheFooter,
   },
   mounted: function () {
+    //★バーガーメニューを押すと
     $(".openbtn").click(function () {
       //ボタンがクリックされたら
       $(this).toggleClass("active"); //ボタン自身に activeクラスを付与し
@@ -26,16 +27,16 @@ export default {
     });
     $("#g-nav2 a").click(function () {
       //ナビゲーションのリンクがクリックされたら
-      $(".openbtn").removeClass("active"); //ボタンの activeクラスを除去し
-      $("#g-nav2").removeClass("panelactive"); //ナビゲーションのpanelactiveクラスを除去し
-      $("#allview").removeClass("mainblur"); //ぼかしているエリアのmainblurクラスを除去
+      $(".openbtn").removeClass("active"); //除去
+      $("#g-nav2").removeClass("panelactive"); //除去
+      $("#allview").removeClass("mainblur"); //除去
     });
   },
 };
 </script>
 
 <style lang="scss">
-/*========= ナビゲーション ===============*/
+/* ナビゲーション */
 #g-nav2 {
   position: fixed;
   z-index: -1;
@@ -91,7 +92,6 @@ export default {
   font-weight: bold;
 }
 /*========= ハンバーガーボタン ===============*/
-/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
 .openbtn {
   position: fixed;
   z-index: 9999;
@@ -100,8 +100,6 @@ export default {
   width: 11rem;
   height: 12.5rem;
 }
-
-/*ボタン内側*/
 .openbtn span {
   display: inline-block;
   transition: all 0.2s ease-out;
@@ -128,9 +126,6 @@ export default {
 .openbtn span:nth-of-type(3) {
   top: 2rem;
 }
-
-/*activeクラスが付与されると線が回転して×に*/
-
 .openbtn.active span:nth-of-type(1) {
   top: -1rem;
   left: 0;
