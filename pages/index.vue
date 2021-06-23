@@ -281,10 +281,10 @@
         </ul>
       </div>
       <div class="btn-viewmore">
-        <div class="btn-inner">
-          <a href=""><span>もっと見る</span></a>
-        </div>
-      </div>
+              <div class="btn-inner">
+                <a href="#" class="btn2 bgleft"><span>もっと見る</span></a>
+              </div>
+            </div>
       <a href="#" class="btn bgleft btn__plus"
         ><span class="btn-text">その他プロジェクトを見る</span></a
       >
@@ -546,6 +546,7 @@ export default {
   perspective: 60rem;
   z-index: 999;
   position: relative;
+  margin-bottom: 14rem;
   &__controlbar {
     min-width: 100rem;
     width: 110rem;
@@ -599,7 +600,7 @@ export default {
         font-weight: 400;
         font-size: 1.2rem;
         display: block;
-        padding-top: 1.8rem;
+        padding-top: 3.8rem;
       }
     }
     .copy {
@@ -621,7 +622,7 @@ export default {
       text-align: center;
       padding: 0;
       > span {
-        padding-bottom: 2rem;
+        padding-bottom: 4rem;
       }
       .slashーsmall {
         font-size: 1.8rem;
@@ -1106,6 +1107,8 @@ export default {
   height: 6.6rem;
   margin: 0;
   z-index: 99;
+  display: flex;
+  float: right;
 }
 .control > button {
   width: 9rem;
@@ -1129,9 +1132,10 @@ export default {
     border-right: solid 3px #1a1a1a;
     transform: rotate(225deg);
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     margin: auto;
   }
 }
@@ -1149,9 +1153,10 @@ export default {
     border-right: solid 3px #1a1a1a;
     transform: rotate(45deg);
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     margin: auto;
   }
 }
